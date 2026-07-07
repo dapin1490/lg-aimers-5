@@ -12,14 +12,14 @@
 실행 시점의 맥락 소실을 방지하고자 원본 파일명을 유지하였으며, 각 파일의 역할은 아래의 매핑 테이블을 참조하십시오.
 
 ### 파일 매핑 테이블 (`notebooks/` 디렉터리 내)
-| 파일명 (Original Filename) | 주요 기능 및 역할 (Description) |
-| :--- | :--- |
-| `240827_데이터분석.ipynb` | 기초 데이터 탐색(EDA) 및 데이터 구조 분석 |
-| `240827_GenericUnivariateSelect.ipynb` | 통계적 피처 선택(Feature Selection) 기법 적용 및 검증 |
-| `240827_gene.ipynb` | 피처 엔지니어링 및 파생 변수 생성 파이프라인 |
-| `240811 code.ipynb` | 기초 전처리, 단일 모델 적용 및 하이퍼파라미터 튜닝 시도 |
-| `0.2124183_240826.ipynb` | `ADASYN` 오버샘플링 적용, 다중 앙상블(`VotingClassifier`) 결합 및 최종 예측 모델 훈련 |
-| `example code.ipynb` | 베이스라인 및 테스트 스니펫 |
+| 파일명 (Original Filename)                                                                  | 주요 기능 및 역할 (Description)                                       |
+| :--------------------------------------------------------------------------------------- | :------------------------------------------------------------- |
+| [`240827_데이터분석.ipynb`](notebooks/240827_데이터분석.ipynb)                                     | 기초 데이터 탐색(EDA) 및 데이터 구조 분석                                     |
+| [`240827_GenericUnivariateSelect.ipynb`](notebooks/240827_GenericUnivariateSelect.ipynb) | 통계적 피처 선택(Feature Selection) 기법 적용 및 검증                        |
+| [`240827_gene.ipynb`](notebooks/240827_gene.ipynb)                                       | 피처 엔지니어링 및 파생 변수 생성 파이프라인                                      |
+| [`240811 code.ipynb`](notebooks/240811%20code.ipynb)                                     | 기초 전처리, 단일 모델 적용 및 하이퍼파라미터 튜닝 시도                               |
+| [`0.2124183_240826.ipynb`](notebooks/0.2124183_240826.ipynb)                             | `ADASYN` 오버샘플링 적용, 다중 앙상블(`VotingClassifier`) 결합 및 최종 예측 모델 훈련 |
+| [`example code.ipynb`](notebooks/example%20code.ipynb)                                   | 베이스라인 및 테스트 스니펫                                                |
 
 ## 기술 파이프라인 요약
 1. **스케일링 및 피처 선택**: `LabelEncoder`와 3종의 스케일러(Standard, MinMax, Robust)를 통해 데이터를 규격화하고, `GenericUnivariateSelect`를 도입해 노이즈 피처를 통계적으로 걸러냈습니다.
